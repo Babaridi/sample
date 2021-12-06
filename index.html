@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/svg"
+      href="Images/bootstrap-logo.svg"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bootstrap Project</title>
+    <script type="text/javascript" src="index.html"></script>
+  </head>
+
+  <body class="bod">
+    <div class="container">
+      <main>
+        <div class="head">
+          <img src="Images/bootstrap-logo.svg" class="image" />
+
+          <h2>Checkout Form</h2>
+          <p class="paragraph">
+            Below is an example form built entirely with Bootstrap’s form
+            controls. Each required form group has a validation state that can
+            be triggered by attempting to submit the form without completing it.
+          </p>
+        </div>
+
+        <div class="main">
+          <h4 class="payment">Billing address</h4>
+          <form class="form">
+            <div class="div"></div>
+
+            <div class="fill">
+              <label for="first name" class="label">First Name</label>
+              <input type="text" class="first_name" id="firstaame" />
+            </div>
+
+            <div class="fill_2">
+              <label for="last name" class="label">Last name</label>
+              <input type="text" class="last_name" id="lastname" />
+            </div>
+
+            <div class="fill_3">
+              <label for="username" class="label">Username</label>
+              <div class="@">
+                <span>@</span>
+                <input
+                  type="text"
+                  class="label"
+                  id="username"
+                  placeholder="Username"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="fill_3">
+              <label for="email" class="label"
+                >"Email " <span class="optional">(Optional)</span></label
+              >
+              <input
+                type="email"
+                class="label"
+                id="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+
+            <div class="fill_3">
+              <label for="address" class="label">Address</label>
+              <input
+                type="text"
+                class="label"
+                id="address"
+                placeholder="1234 Main St."
+                required
+              />
+            </div>
+
+            <div class="fill_3">
+              <label for="address2" class="adress"
+                >Address 2 <span class="optional">Optional</span></label
+              >
+              <input
+                type="text"
+                class="label"
+                id="adress2"
+                placeholder="Apartment or suite"
+                required
+              />
+            </div>
+
+            <div class="country">
+              <label for="country" class="label">Country</label>
+              <select class="select" id="country" required>
+                <option>Choose...</option>
+                <option>State</option>
+              </select>
+            </div>
+
+            <div class="state">
+              <label for="state" class="label">Country</label>
+              <select class="select" id="country" required>
+                <option>Choose...</option>
+                <option>City</option>
+              </select>
+            </div>
+
+            <div class="zip">
+              <label for="zip" class="label">Zip</label>
+              <input
+                type="text"
+                class="control"
+                id="zip"
+                placeholder
+                required
+              />
+            </div>
+
+            <hr class="line" />
+
+            <div class="confirm">
+              <input type="checkbox" class="confirm-input" id="same-address" />
+              <label for="same-address"
+                >Shipping address is the same as my billing address</label
+              >
+            </div>
+
+            <div class="confirm">
+              <input type="checkbox" class="confirm-input" id="save-info" />
+              <label for="save-info">Save this information for next time</label>
+            </div>
+
+            <hr class="line" />
+
+            <h4 class="payment">Payment</h4>
+
+            <div class="margin">
+              <div class="confirm">
+                <input
+                  id="credit"
+                  name="paymentMethod"
+                  type="radio"
+                  class="confirm-input"
+                  checked
+                  required
+                />
+                <label for="credit" class="">Credit card</label>
+              </div>
+              <div class="confirm">
+                <input
+                  id="debit"
+                  name="paymentMethod"
+                  type="radio"
+                  class="confirm-input"
+                  checked
+                  required
+                />
+                <label for="debit" class="">Debit card</label>
+              </div>
+              <div class="confirm">
+                <input
+                  id="paypal"
+                  name="paymentMethod"
+                  type="radio"
+                  class="confirm-input"
+                  checked
+                  required
+                />
+                <label for="paypal" class="">PayPal</label>
+              </div>
+            </div>
+
+            <div class="div">
+              <div class="">
+                <label for="card-name" class="label">Name on card</label>
+                <input
+                  type="text"
+                  class="control"
+                  id="card-name"
+                  placeholder
+                  required
+                />
+                <small class="text">Full name as displayed on card</small>
+              </div>
+
+              <div class="">
+                <label for="card-number" class="label"
+                  >Credit card number</label
+                >
+                <input
+                  type="text"
+                  class="control"
+                  id="card-number"
+                  placeholder
+                  required
+                />
+              </div>
+
+              <div class="">
+                <label for="card-expiration" class="label">Expiration</label>
+                <input
+                  type="text"
+                  class="control"
+                  id="card-expiration"
+                  placeholder
+                  required
+                />
+              </div>
+              <div class="">
+                <label for="card-cvv" class="label">CVV</label>
+                <input
+                  type="text"
+                  class="control"
+                  id="card-cvv"
+                  placeholder
+                  required
+                />
+              </div>
+            </div>
+
+            <hr class="line" />
+
+            <button id="btn" onclick="checkNameLength()" text="Submit">
+              Continue to checkout
+            </button>
+          </form>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>© 2017-2021 Company Name</p>
+        <li>
+          <a href="">Privacy</a>
+        </li>
+        <li>
+          <a href="">Terms</a>
+        </li>
+        <li>
+          <a href="">Support</a>
+        </li>
+      </footer>
+    </div>
+  </body>
+</html>
